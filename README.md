@@ -47,18 +47,31 @@ VALUES
 запрос:
 
 select iu.EMPLOYEEID , iu.USERNAME, iu.DEPARTMENT, iu.LOCATION, iu.JOBTITLE
+
 from locations l
+
 inner join  INTERNALUSERS iu
+
 on iu.location=l.location
+
 where l.location='loc3'
+
 union all
+
 select eu.EMPLOYEEID , eu.USERNAME, NULL, eu.LOCATION, NULL
+
 from locations l
+
 inner join  EXTERNALUSERS eu
+
 on eu.location=l.location
+
 where l.location='loc3'
 
 
-EMPLOYEEID  	USERNAME  	DEPARTMENT  	LOCATION  	JOBTITLE  
+
+EMPLOYEEID  	USERNAME  	DEPARTMENT  	LOCATION  	JOBTITLE 
+
 3	iuname3	dep3	loc3	jt3
+
 3	euname3	null	loc3	null
