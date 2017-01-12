@@ -75,3 +75,5 @@ EMPLOYEEID  	USERNAME  	DEPARTMENT  	LOCATION  	JOBTITLE
 3	iuname3	dep3	loc3	jt3
 
 3	euname3	null	loc3	null
+
+протестировано на h2
