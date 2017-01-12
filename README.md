@@ -1,8 +1,12 @@
 # PrincipIT
 Exercise 1: Java Development
+
 запуск с мейн метода в me.principit.Starter;
+
 Exercise 2: SQL statements
+
 схема:
+
 CREATE TABLE InternalUsers
 	(`employeeid` int, `username` varchar(9), `department` varchar(55), `jobtitle` varchar(55),  `location` varchar(55),  `phonenumber` varchar(55),  `mailaddress` varchar(55))
 ;
@@ -39,7 +43,9 @@ VALUES
 	(3, 'loc3', 'fm3')
 ;
 
+
 запрос:
+
 select iu.EMPLOYEEID , iu.USERNAME, iu.DEPARTMENT, iu.LOCATION, iu.JOBTITLE
 from locations l
 inner join  INTERNALUSERS iu
@@ -51,6 +57,7 @@ from locations l
 inner join  EXTERNALUSERS eu
 on eu.location=l.location
 where l.location='loc3'
+
 
 EMPLOYEEID  	USERNAME  	DEPARTMENT  	LOCATION  	JOBTITLE  
 3	iuname3	dep3	loc3	jt3
